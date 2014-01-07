@@ -1,0 +1,18 @@
+{
+	"folders":
+	[
+		{
+			"path": "/home/mixser/Work/C++/OpenGL/first"
+		}
+	],
+	"settings":
+	{
+		"sublimeclang_additional_language_options":
+		{
+			"c++":
+			[
+				"-std=c++11"
+			]
+		}
+	}
+}

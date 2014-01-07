@@ -1,0 +1,747 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Get",
+				"GetY()	int"
+			],
+			[
+				"G",
+				"GetX()	int"
+			],
+			[
+				"_sn",
+				"_snake	std::deque<std::pair<int, int> >"
+			],
+			[
+				"ob",
+				"object	IGameObject *"
+			],
+			[
+				"_sna",
+				"_snake	std::deque<std::pair<int, int> >"
+			],
+			[
+				"mes",
+				"message_value	uint"
+			],
+			[
+				"_",
+				"_side	int"
+			],
+			[
+				"Game",
+				"GameEngine	class"
+			],
+			[
+				"po",
+				"pop_back()	void"
+			],
+			[
+				"Dr",
+				"DrawObjects()	void"
+			],
+			[
+				"GL_LINE_ST",
+				"GL_LINE_STRIP	macro"
+			],
+			[
+				"GL_LINE",
+				"GL_LINES	macro"
+			],
+			[
+				"pop",
+				"pop_back()	void"
+			],
+			[
+				"mak",
+				"make_pair(_T1 &&__x, _T2 &&__y)	pair<typename __decay_and_strip<_T1>::__type, typename __decay_and_strip<_T2>::__type>"
+			],
+			[
+				"push",
+				"push_front(value_type &&__x)	void"
+			],
+			[
+				"de",
+				"deque<typename _Tp>	class"
+			],
+			[
+				"vi",
+				"viewport_x	int"
+			],
+			[
+				"GLUT_WI",
+				"GLUT_WINDOW_WIDTH	macro"
+			],
+			[
+				"GLUT_WIN",
+				"GLUT_WINDOW_HEIGHT	macro"
+			],
+			[
+				"viewp",
+				"viewport_y	int"
+			],
+			[
+				"vie",
+				"viewport_y	int"
+			],
+			[
+				"GL_WINDOW",
+				"GLUT_WINDOW_X	macro"
+			],
+			[
+				"stde",
+				"stderr	macro"
+			],
+			[
+				"Pin",
+				"PrintLog(const char *message, int type)	void"
+			],
+			[
+				"glVertex2i",
+				"glVertex2i(GLint x, GLint y)	void"
+			],
+			[
+				"glEn",
+				"glEnd()	void"
+			],
+			[
+				"glutRes",
+				"glutReshapeWindow(int width, int height)	void"
+			],
+			[
+				"R",
+				"Reshape(int, int)	void"
+			],
+			[
+				"spr",
+				"sprintf(char *restrict __s, const char *restrict __format, ...)	int"
+			],
+			[
+				"gluOr",
+				"gluOrtho2D(GLdouble left, GLdouble right, GLdouble bottom, GLdouble top)	void"
+			],
+			[
+				"Ga",
+				"GameEngine"
+			],
+			[
+				"glOr",
+				"gluOrtho2D(GLdouble left, GLdouble right, GLdouble bottom, GLdouble top)	void"
+			],
+			[
+				"glutPo",
+				"glutPostRedisplay()	void"
+			],
+			[
+				"glCol",
+				"glColor3fv(const GLfloat *v)	void"
+			],
+			[
+				"GL_PO",
+				"GL_POINT	macro"
+			],
+			[
+				"Pr",
+				"PrintLog(const char *message, int type)	void"
+			],
+			[
+				"GLEW",
+				"GLEW_OK	macro"
+			],
+			[
+				"glew",
+				"glewInit()	GLenum"
+			],
+			[
+				"glutLe",
+				"glutLeaveMainLoop()	void"
+			],
+			[
+				"GLUTBac",
+				"GLUTBackendRun(ICallback *pCallback)	void"
+			],
+			[
+				"GLUT_ACTION",
+				"GLUT_ACTION_GLUTMAINLOOP_RETURNS	macro"
+			],
+			[
+				"GLUT_DE",
+				"GLUT_DEPTH	macro"
+			],
+			[
+				"glutKe",
+				"glutKeyboardUpFunc(void (*callback)(unsigned char, int, int))	void"
+			],
+			[
+				"glutSpeci",
+				"glutSpecialFunc(void (*callback)(int, int, int))	void"
+			],
+			[
+				"GLUT_R",
+				"GLUT_RGB	macro"
+			],
+			[
+				"glutDIs",
+				"glutInitDisplayMode(unsigned int displayMode)	void"
+			],
+			[
+				"WIN",
+				"WINDOW_HEIGHT	macro"
+			],
+			[
+				"WID",
+				"WINDOW_WIDTH	macro"
+			],
+			[
+				"GLUTCrea",
+				"GLUTBackendCreateWindow(unsigned int width, unsigned int height, unsigned int bpp, bool isFullScreen, const char *pTitle)	bool"
+			],
+			[
+				"glutR",
+				"glutPostRedisplay()	void"
+			],
+			[
+				"glVertex2f",
+				"glVertex2f(GLfloat x, GLfloat y)	void"
+			],
+			[
+				"glutCre",
+				"glutCreateWindow(const char *title)	int"
+			],
+			[
+				"glutInitWin",
+				"glutInitWindowSize(int width, int height)	void"
+			],
+			[
+				"in",
+				"inc	#include \"…\""
+			],
+			[
+				"glutInitW",
+				"glutInitWindowSize(int width, int height)	void"
+			],
+			[
+				"GLUT_RGB",
+				"GLUT_RGBA	macro"
+			],
+			[
+				"glutInt",
+				"glutInitDisplayMode(unsigned int displayMode)	void"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/Snake.cpp",
+			"settings":
+			{
+				"buffer_size": 1166,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/GameEngine.cpp",
+			"settings":
+			{
+				"buffer_size": 1367,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/GameBase.cpp",
+			"settings":
+			{
+				"buffer_size": 1756,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/GlutBackend.cpp",
+			"settings":
+			{
+				"buffer_size": 1798,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/header/Snake.h",
+			"settings":
+			{
+				"buffer_size": 386,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/header/GameEngine.h",
+			"settings":
+			{
+				"buffer_size": 901,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/Makefile",
+			"settings":
+			{
+				"buffer_size": 495,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/header/engine_common.h",
+			"settings":
+			{
+				"buffer_size": 211,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/header/IGameObject.h",
+			"settings":
+			{
+				"buffer_size": 274,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/User/OpenGL.sublime-build",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"pkg re",
+				"Package Control: Remove Package"
+			],
+			[
+				"pkg in",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/mixser/Work/C++/OpenGL/first/src/header/IGameObject.h",
+		"/usr/include/sys/types.h",
+		"/usr/include/GL/glew.h",
+		"/home/mixser/Work/C++/OpenGL/first/src/util.cpp",
+		"/home/mixser/Work/C++/OpenGL/first/src/main.cpp",
+		"/home/mixser/Work/C++/OpenGL/first/src/GameEngine.cpp",
+		"/home/mixser/Work/C++/OpenGL/first/src/GlutBackend.cpp",
+		"/home/mixser/Work/C++/OpenGL/first/src/GameBase.cpp",
+		"/home/mixser/Work/C++/OpenGL/first/src/Makefile",
+		"/home/mixser/Work/C++/OpenGL/first/src/header/engine_common.h",
+		"/home/mixser/Work/C++/OpenGL/first/src/header/util.h",
+		"/home/mixser/Work/C++/OpenGL/first/src/header/ICallback.h",
+		"/home/mixser/Work/C++/OpenGL/first/src/header/GlutBackend.h",
+		"/home/mixser/Work/C++/OpenGL/first/src/header/GameEngine.h",
+		"/home/mixser/Work/C++/OpenGL/first/src/header/GameBase.h",
+		"/usr/include/GL/gl.h",
+		"/usr/include/GL/freeglut_std.h",
+		"/home/mixser/.config/sublime-text-2/Packages/User/OpenGL.sublime-build",
+		"/home/mixser/Work/C++/OpenGL/first/Makefile",
+		"/home/mixser/Work/C++/OpenGL/first/src/source.cpp",
+		"/home/mixser/Work/C++/OpenGL/first/GameBase.h",
+		"/home/mixser/Work/C++/OpenGL/first/ICallback.h",
+		"/home/mixser/Work/C++/OpenGL/first/GlutBackend.h",
+		"/home/mixser/Work/C++/OpenGL/first/main.cpp",
+		"/home/mixser/Work/C++/OpenGL/first/GlutBackend.cpp",
+		"/home/mixser/Work/C++/OpenGL/first/GameBase.cpp",
+		"/home/mixser/Work/C++/OpenGL/first/util.h",
+		"/home/mixser/Work/C++/OpenGL/first/util.cpp",
+		"/home/mixser/Work/C++/OpenGL/first/engine_common.h",
+		"/home/mixser/Work/C++/OpenGL/first/util.h.txt",
+		"/usr/include/stdio.h",
+		"/home/mixser/Work/C++/OpenGL/first/source.cpp",
+		"/home/mixser/Work/C++/OpenGL/first/openGL_example.sublime-workspace",
+		"/home/mixser/Work/C++/OpenGL/first/openGL_example.sublime-project",
+		"/home/mixser/.config/sublime-text-2/Packages/SublimeClang/SublimeClang.sublime-settings",
+		"/home/mixser/Work/C++/OpenGL/first/1",
+		"/usr/include/c++/4.8.2/iostream",
+		"/home/mixser/.config/sublime-text-2/Packages/SublimeGDB/SublimeGDB.sublime-settings",
+		"/home/mixser/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
+		"/home/mixser/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"GameBase",
+			"sett",
+			"lGL",
+			"sett"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/Snake.cpp",
+					"settings":
+					{
+						"buffer_size": 1166,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1166,
+								1166
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/GameEngine.cpp",
+					"settings":
+					{
+						"buffer_size": 1367,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1367,
+								1367
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 885.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/GameBase.cpp",
+					"settings":
+					{
+						"buffer_size": 1756,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1526,
+								1526
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 900.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/GlutBackend.cpp",
+					"settings":
+					{
+						"buffer_size": 1798,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1434,
+								1434
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 731.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 4,
+					"file": "src/header/Snake.h",
+					"settings":
+					{
+						"buffer_size": 386,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								358,
+								358
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "src/header/GameEngine.h",
+					"settings":
+					{
+						"buffer_size": 901,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								611,
+								611
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "src/Makefile",
+					"settings":
+					{
+						"buffer_size": 495,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								84,
+								84
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Makefile/Makefile.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "src/header/engine_common.h",
+					"settings":
+					{
+						"buffer_size": 211,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								173,
+								173
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "src/header/IGameObject.h",
+					"settings":
+					{
+						"buffer_size": 274,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								210,
+								210
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.472861842105,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.clang":
+	{
+		"height": 100.0
+	},
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 137.0,
+	"status_bar_visible": true
+}
