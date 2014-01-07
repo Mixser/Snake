@@ -1,8 +1,8 @@
 all: project
 
 
-project: util.o GlutBackend.o  GameEngine.o GameBase.o main.o Snake.o
-	g++  main.o util.o GameBase.o GlutBackend.o GameEngine.o Snake.o  -o ../build/project -lGL -lGLU -lglut -lGLEW
+project: util.o GlutBackend.o  GameEngine.o GameBase.o main.o Snake.o Apple.o
+	g++  main.o util.o GameBase.o GlutBackend.o GameEngine.o Snake.o Apple.o  -o ../build/project -lGL -lGLU -lglut -lGLEW
 	
 
 
@@ -21,6 +21,8 @@ GameEngine.o: GameEngine.cpp
 
 Snake.o: Snake.cpp
 	g++ -c Snake.cpp
+Apple.o: Apple.cpp
+	g++ -c Apple.cpp
 
 main.o: main.cpp
 	g++ -c main.cpp 

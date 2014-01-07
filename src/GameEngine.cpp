@@ -44,10 +44,21 @@ void GameEngine::DrawObjects()
 		_game_objects[i]->RenderObject();		
 }
 
+void GameEngine::Collision()
+{
+	for (int i = 0; i < _game_objects.size(); i++)
+		if (_user->Collision(_game_objects[i]))
+		{
+			_game_objects.erase(_game_objects.begin() + i);
+			_user->IncSize();
+		}
+}
+
 void GameEngine::RenderScene() 
 {
-	DrawNet();
+	//DrawNet();
 	ObjectActions();
+	Collision();
 	DrawObjects();
 }
 

@@ -68,5 +68,26 @@ int Snake::GetType()
 	return 1;
 }
 
+bool Snake::Collision(IGameObject * obj)
+{
+	if (obj->GetType() == 1)
+		return false;
+	for (int i = 0; i < _snake.size(); i++)
+		if (_snake[i] ==  obj->GetPosition())
+			return true;
+	return false;
+}
 
+
+std::pair<int, int> Snake::GetPosition()
+{
+	return std::make_pair(-1, -1);
+}
+
+
+void Snake::IncSize()
+{
+	std::pair<int, int> newElem = _snake.back();
+	_snake.push_back(newElem);
+}
 

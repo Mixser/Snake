@@ -21,7 +21,10 @@ class Snake : public IGameObject
 		void Move();
 		void SetDirection(int direction);
 		int  GetType();
-		//bool Collision();
+		bool Collision(IGameObject *);
+		void IncSize();
+		
+		std::pair<int, int> GetPosition();
 
 };
 #endif

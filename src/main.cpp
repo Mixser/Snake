@@ -1,9 +1,6 @@
-#include <GL/freeglut.h>
-#include <GL/gl.h>
-#include <GL/glu.h>
-
 #include "header/GlutBackend.h"
 #include "header/GameBase.h"
+
 
 #define WINDOW_WIDTH 800
 #define WINDOW_HEIGHT 600
@@ -12,7 +9,7 @@
 
 
 int main(int argc, char ** argv) {
-	GameBase * pApp = new GameBase();
+	GameBase * pApp = GameBase::GetInstance();
 
 	GLUTBackendInit(argc, argv);
 	

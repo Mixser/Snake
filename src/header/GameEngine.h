@@ -1,15 +1,15 @@
 #ifndef _GAME_ENGINE_
 #define _GAME_ENGINE_
 
-#include "IGameObject.h"
-#include "Snake.h"
 
 #include <vector>
 #include <cstdlib>
-#include <GL/glew.h>
-#include <GL/glut.h>
+#include <GL/freeglut.h>
 #include <GL/gl.h>
 #include <GL/glu.h>
+
+#include "Snake.h"
+
 
 
 #define TIMER_STEP 100
@@ -26,7 +26,7 @@ class GameEngine
 		void DrawNet();
 		void ObjectActions();
 		void DrawObjects();
-
+		void Collision();
 
 		static void TimerFunc(int)
 		{

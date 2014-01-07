@@ -10,9 +10,18 @@
 #include "header/GameEngine.h"
 #include "header/Snake.h"
 #include "header/IGameObject.h"
+#include "header/Apple.h"
 
 #define SPEED_X  5
 #define SPEED_Y  6
+
+
+GameBase * GameBase::p_base = NULL;
+
+GameBase::GameBase()
+{
+
+}
 
 
 void GameBase::SpecialKeyboard(int key, int x, int y)
@@ -76,6 +85,14 @@ void GameBase::Idle()
 	//glutPostRedisplay();	
 }
 
+
+void SpawnFruit(int timer_id)
+{
+	GameBase * p = GameBase::GetInstance();
+	p->p_engine->AddGameObject(new Apple(rand() % 40, rand() % 30));
+	glutTimerFunc(2000, SpawnFruit, timer_id);
+}
+
 bool GameBase::Init()
 {
 	viewport_x = 0;
@@ -84,6 +101,7 @@ bool GameBase::Init()
 	p_engine = GameEngine::GetInstance();
 	IGameObject * _snake = new Snake();
 	p_engine->AddGameObject(_snake);
+	glutTimerFunc(10, SpawnFruit, 2);
 	return true;
 }
 
