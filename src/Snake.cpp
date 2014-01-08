@@ -44,10 +44,18 @@ void Snake::Move()
 
 void Snake::SetDirection(int direction)
 {
-	if (direction != -1 && 
-		  (direction + _side != 2) &&
-			 (direction + _side != 4))
-		this->_side = direction;
+	std::pair<int, int> newPostion = _snake[0];
+	switch (direction)
+	{
+		case UP: newPostion.second -= 1; break;
+		case DOWN: newPostion.second += 1; break;
+		case LEFT: newPostion.first -= 1; break;
+		case RIGHT: newPostion.first += 1; break;
+	}
+	for (int i = 0 ; i < _snake.size(); i++)
+		if (_snake[i] == newPostion)
+			return;
+	this->_side = direction;
 }
 
 
