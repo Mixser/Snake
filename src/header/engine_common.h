@@ -10,6 +10,9 @@
 #define SNAKE_TURN 1
 #define KEYBOARD_DOWN 10
 
+#define STOP_GAME 15
+#define START_GAME 16
+
 // MESSAGE TYPE
 
 
