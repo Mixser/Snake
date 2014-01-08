@@ -8,7 +8,7 @@ bool GameEngine::_game_stopped = true;
 
 GameEngine::GameEngine()
 {
-	
+	draw_grid = false;
 	PrintLog("Init GameEngine", INFO_MESSAGE);
 	glutTimerFunc(TIMER_STEP, TimerFunc, TIMER_ID);	
 }
@@ -63,8 +63,8 @@ void GameEngine::Collision()
 }
 
 void GameEngine::RenderScene() 
-{
-	DrawNet();
+{	if (draw_grid)
+		DrawNet();
 	DrawObjects();
 }
 
@@ -92,6 +92,9 @@ void GameEngine::SendMessage(uint message_type, uint  message_value)
 							break;
 
 		case START_GAME:	_game_stopped = false;
+							break;
+
+		case GRID: 			draw_grid = !draw_grid;
 							break;
 
 	}

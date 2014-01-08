@@ -44,6 +44,9 @@ void GameBase::Keyboard(unsigned char key, int x, int y)
 		case GLUT_KEY_SPACE:
 								_message = SPACE;
 								break;
+		case GLUT_KEY_PAGE_DOWN: 
+								p_engine->SendMessage(GRID, 0);
+								return;
 		default:				
 								break;
 

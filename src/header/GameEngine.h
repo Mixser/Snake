@@ -25,9 +25,12 @@ class GameEngine
 	private:
 
 		static GameEngine * _instance ;
+		static bool _game_stopped;
+
 		std::vector<IGameObject *> _game_objects;
 		Snake * _user;
-		static bool _game_stopped;
+		bool draw_grid;
+		
 
 
 		GameEngine();
