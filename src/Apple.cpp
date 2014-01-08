@@ -1,6 +1,5 @@
 #include "header/Apple.h"
-#include "header/util.h"
-#include "header/engine_common.h"
+
 
 Apple::Apple(int x, int y)
 {

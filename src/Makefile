@@ -27,6 +27,5 @@ Apple.o: Apple.cpp
 main.o: main.cpp
 	g++ -c main.cpp 
 
-
 clean:
 	rm -rf *.o project

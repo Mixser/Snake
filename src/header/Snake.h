@@ -1,7 +1,17 @@
 #ifndef _SNAKE_
 #define _SNAKE_
 
+#include <GL/gl.h>
+#include <GL/glu.h>
+#include <cstdio>
+
+
+#include "util.h"
+#include "engine_common.h"
+
 #include "IGameObject.h"
+
+
 #include <deque>
 
 #define UP 0

@@ -1,20 +1,8 @@
-#include <cstdio>
-#include <GL/glew.h>
-#include <GL/freeglut.h>
-#include <GL/gl.h>
-#include <GL/glu.h>
-
-#include "header/util.h"
-#include "header/engine_common.h"
 #include "header/GameBase.h"
-#include "header/GameEngine.h"
-#include "header/Snake.h"
-#include "header/IGameObject.h"
-#include "header/Apple.h"
+
 
 #define SPEED_X  5
 #define SPEED_Y  6
-
 
 GameBase * GameBase::p_base = NULL;
 

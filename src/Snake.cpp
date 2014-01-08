@@ -1,9 +1,5 @@
 #include "header/Snake.h"
-#include <GL/gl.h>
-#include <GL/glu.h>
-#include "header/util.h"
-#include "header/engine_common.h"
-#include <cstdio>
+
 Snake::Snake() 
 {
 	for (int i = 0; i < 5; i++)

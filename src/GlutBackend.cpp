@@ -1,13 +1,4 @@
-#include <cstdio>
-#include <GL/glew.h>
-#include <GL/freeglut.h>
-#include <GL/gl.h>
-#include <GL/glu.h>
-#include "header/ICallback.h"
-
-
-#include "header/util.h"
-#include "header/engine_common.h"
+#include "header/GlutBackend.h"
 
 
 static ICallback * s_callback = NULL;

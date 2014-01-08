@@ -10,6 +10,10 @@
 
 #include "Snake.h"
 
+#include "util.h"
+#include "engine_common.h"
+
+
 
 
 #define TIMER_STEP 100

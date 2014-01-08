@@ -3,11 +3,15 @@
 
 #define _APPLE_
 
-#include "IGameObject.h"
 
 #include <iostream>
 #include <GL/gl.h>
 #include <GL/glu.h>
+
+#include "IGameObject.h"
+
+#include "util.h"
+#include "engine_common.h"
 
 
 class Apple : public IGameObject

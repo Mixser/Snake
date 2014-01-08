@@ -1,9 +1,6 @@
 #include "header/GameEngine.h"
 
-#include "header/util.h"
-#include "header/engine_common.h"
 
-#include "header/Snake.h"
 
 GameEngine * GameEngine::_instance = NULL;
 
@@ -56,7 +53,7 @@ void GameEngine::Collision()
 
 void GameEngine::RenderScene() 
 {
-	//DrawNet();
+	DrawNet();
 	ObjectActions();
 	Collision();
 	DrawObjects();
