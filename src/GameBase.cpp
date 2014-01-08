@@ -25,8 +25,6 @@ void GameBase::Mouse(int button,int state ,int x, int y)
 
 void GameBase::Keyboard(unsigned char key, int x, int y)
 {
-	//int height = glutGet(GLUT_WINDOW_HEIGHT);
-	//int width = glutGet(GLUT_WINDOW_WIDTH);
 	int _message = -1;
 	switch (key) 
 	{
@@ -53,9 +51,11 @@ void GameBase::Keyboard(unsigned char key, int x, int y)
 
 void GameBase::Reshape(int width, int height) 
 {
+	p_engine->SendMessage(STOP_GAME, 0);
 	glLoadIdentity();
     gluOrtho2D(0, width, height, 0);	
     glViewport(viewport_x, viewport_y,  width,  height);
+    p_engine->SendMessage(START_GAME, 0);
  
 }
 
@@ -70,7 +70,7 @@ void GameBase::RenderScene()
 
 void GameBase::Idle()
 {
-	//glutPostRedisplay();	
+	glutPostRedisplay();	
 }
 
 
