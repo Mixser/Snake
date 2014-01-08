@@ -2,6 +2,7 @@
 
 Snake::Snake() 
 {
+	PrintLog("Init Snake", INFO_MESSAGE);
 	for (int i = 0; i < 5; i++)
 		_snake.push_front(std::make_pair(i, 0));
 	_side = -1;
@@ -15,7 +16,8 @@ Snake::~Snake()
 
 void Snake::Move()
 {
-
+	int y = glutGet(GLUT_WINDOW_HEIGHT) / 20;
+	int x = glutGet(GLUT_WINDOW_WIDTH) / 20;
 
 	if (_side == -1)
 		return;
@@ -35,6 +37,10 @@ void Snake::Move()
 		default: 
 						break;
 	}
+
+	newPart.first  = abs(newPart.first % x  + x) % x;
+	newPart.second  = abs(newPart.second % y  + y) % y;
+
 	static char _title[15];
 	sprintf(_title, "%d x %d", _snake[0].first, _snake[0].second);
 	glutSetWindowTitle(_title);
@@ -48,13 +54,18 @@ void Snake::SetDirection(int direction)
 	switch (direction)
 	{
 		case UP: newPostion.second -= 1; break;
+
 		case DOWN: newPostion.second += 1; break;
+
 		case LEFT: newPostion.first -= 1; break;
+
 		case RIGHT: newPostion.first += 1; break;
 	}
+
 	for (int i = 0 ; i < _snake.size(); i++)
 		if (_snake[i] == newPostion)
 			return;
+
 	this->_side = direction;
 }
 
@@ -62,15 +73,20 @@ void Snake::SetDirection(int direction)
 void Snake::RenderObject() 
 {
 	glLineWidth(2);
-	glBegin(GL_LINE_STRIP);
+
+	glBegin(GL_QUADS);
 	
 	for (int i = 0 ; i < _snake.size(); i++)
 	{
 		int _x = _snake[i].first;
 		int _y = _snake[i].second;
-		glVertex2i(_x*20 + 10, _y*20 + 10);
+		glVertex2i(_x*20     , _y*20 + 10);
+		glVertex2i(_x*20 + 10, _y*20 + 20);
+		glVertex2i(_x*20 + 20, _y*20 + 10);
+		glVertex2i(_x*20 + 10, _y*20);
 	}
 	glEnd();
+
 	glLineWidth(1);
 }	
 

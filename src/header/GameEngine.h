@@ -23,19 +23,32 @@
 class GameEngine
 {
 	private:
+
 		static GameEngine * _instance ;
 		std::vector<IGameObject *> _game_objects;
 		Snake * _user;
+		static bool _game_stopped;
+
+
 		GameEngine();
 		void DrawNet();
 		void ObjectActions();
 		void DrawObjects();
 		void Collision();
+		void SaveDelete(IGameObject * obj);
+
+		void Handler();
+
+		void KeyboardHandler(int key_code);
+
 
 		static void TimerFunc(int)
 		{
-			if (_instance != NULL)
+			if (_instance != NULL && _instance->_user != NULL) {
+				_instance->ObjectActions();
+				_instance->Collision();
 				glutPostRedisplay();
+			}
 			glutTimerFunc(TIMER_STEP, TimerFunc, TIMER_ID);
 		}		
 

@@ -17,6 +17,7 @@
 #define RIGHT 1
 #define DOWN 2
 #define LEFT 3
+#define SPACE 4
 
 class Snake : public IGameObject 
 {

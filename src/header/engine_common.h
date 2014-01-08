@@ -1,6 +1,11 @@
 #ifndef _COMMON_
 #define _COMMON_
 
+//Object types
+
+#define SNAKE 1
+#define APPLE 2
+
 
 // LOG_MESSAGE_TYPES
 #define ERROR_MESSAGE 0
@@ -14,6 +19,10 @@
 
 #define STOP_GAME 15
 #define START_GAME 16
+
+
+#define NEW_GAME 20
+
 
 
 

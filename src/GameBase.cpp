@@ -1,8 +1,9 @@
 #include "header/GameBase.h"
 
 
-#define SPEED_X  5
-#define SPEED_Y  6
+
+#define GLUT_KEY_SPACE 32
+
 
 GameBase * GameBase::p_base = NULL;
 
@@ -40,13 +41,15 @@ void GameBase::Keyboard(unsigned char key, int x, int y)
 		case GLUT_KEY_RIGHT:	
 								_message = RIGHT;
 						  		break;
+		case GLUT_KEY_SPACE:
+								_message = SPACE;
+								break;
 		default:				
 								break;
 
 
 	}
 	p_engine->SendMessage(KEYBOARD_DOWN, _message);
-	//glViewport(viewport_x, viewport_y,  width,  height);
 }
 
 void GameBase::Reshape(int width, int height) 
@@ -87,8 +90,7 @@ bool GameBase::Init()
 	viewport_y = 0;
 	PrintLog("Init game base", INFO_MESSAGE);
 	p_engine = GameEngine::GetInstance();
-	IGameObject * _snake = new Snake();
-	p_engine->AddGameObject(_snake);
+	p_engine->AddGameObject( new Snake());
 	glutTimerFunc(10, SpawnFruit, 2);
 	return true;
 }
