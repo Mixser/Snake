@@ -7,12 +7,18 @@ Snake::Snake()
 	_side = -1;
 }	
 
+
+Snake::~Snake()
+{
+	PrintLog("Snake was deleted", ERROR_MESSAGE);
+}
+
 void Snake::Move()
 {
 
+
 	if (_side == -1)
 		return;
-	PrintLog("MOVE", WARNING_MESSAGE );
 	std::pair<int, int> newPart = _snake.front();
 	_snake.pop_back();
 	switch (_side)
@@ -29,6 +35,9 @@ void Snake::Move()
 		default: 
 						break;
 	}
+	static char _title[15];
+	sprintf(_title, "%d x %d", _snake[0].first, _snake[0].second);
+	glutSetWindowTitle(_title);
 	_snake.push_front(newPart);
 }
 
@@ -44,7 +53,6 @@ void Snake::SetDirection(int direction)
 
 void Snake::RenderObject() 
 {
-	PrintLog("Render snake", WARNING_MESSAGE );
 	glLineWidth(2);
 	glBegin(GL_LINE_STRIP);
 	
@@ -66,12 +74,19 @@ int Snake::GetType()
 
 bool Snake::Collision(IGameObject * obj)
 {
+
 	if (obj->GetType() == 1)
+	{
+		for (int i = 1; i <_snake.size(); i++)
+			if (_snake[0] == _snake[i])
+				return true;
 		return false;
-	for (int i = 0; i < _snake.size(); i++)
-		if (_snake[i] ==  obj->GetPosition())
-			return true;
-	return false;
+	} else {
+		for (int i = 0; i < _snake.size(); i++)
+			if (_snake[i] ==  obj->GetPosition())
+				return true;
+		return false;
+	}	
 }
 
 

@@ -1,8 +1,7 @@
 #ifndef _SNAKE_
 #define _SNAKE_
 
-#include <GL/gl.h>
-#include <GL/glu.h>
+#include <GL/freeglut.h>
 #include <cstdio>
 
 
@@ -27,6 +26,7 @@ class Snake : public IGameObject
 		
 	public:
 		Snake();
+		~Snake();
 		void RenderObject();
 		void Move();
 		void SetDirection(int direction);

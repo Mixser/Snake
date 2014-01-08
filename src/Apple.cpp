@@ -3,15 +3,17 @@
 
 Apple::Apple(int x, int y)
 {
-	PrintLog("Apple", WARNING_MESSAGE );
 	_X = x;
 	_Y = y;
+}
+Apple::~Apple()
+{
+	PrintLog("Apple has been deleted", WARNING_MESSAGE);
 }
 
 
 void Apple::RenderObject()
 {
-	PrintLog("Render Apple", WARNING_MESSAGE );
 	glBegin(GL_TRIANGLES);
 		glVertex2i(_X*20, _Y*20);
 		glVertex2i((_X+1)*20, _Y*20);

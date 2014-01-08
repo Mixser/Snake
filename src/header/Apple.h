@@ -23,6 +23,7 @@ class Apple : public IGameObject
 	public:
 
 		Apple(int x, int y);
+		~Apple();
 
 		virtual void RenderObject();
 		virtual int  GetType();

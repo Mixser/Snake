@@ -15,7 +15,14 @@ class IGameObject
 		virtual void Move() = 0;
 		virtual bool Collision(IGameObject *) = 0;
 		virtual std::pair<int, int> GetPosition() = 0;
+		virtual ~IGameObject() = 0;
 };
+
+IGameObject::~IGameObject() 
+{
+	
+}
+
 
 
 
