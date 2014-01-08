@@ -7,6 +7,9 @@
 #define APPLE 2
 
 
+
+
+
 // LOG_MESSAGE_TYPES
 #define ERROR_MESSAGE 0
 #define WARNING_MESSAGE 1
@@ -23,7 +26,8 @@
 
 #define NEW_GAME 20
 
-
+// On/Off grid 
+#define GRID 25
 
 
 #endif // _COMMON_
