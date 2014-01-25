@@ -4,12 +4,60 @@
 		"selected_items":
 		[
 			[
-				"pu",
-				"push_back(value_type &&__x)	void"
+				"project",
+				"project_path"
+			],
+			[
+				"ob",
+				"obj	IGameObject *"
+			],
+			[
+				"_ga",
+				"_game_objects	std::vector<IGameObject *>"
 			],
 			[
 				"Game",
-				"GameBase	class"
+				"GameEngine"
+			],
+			[
+				"p_",
+				"p_engine	GameEngine *"
+			],
+			[
+				"message",
+				"message_value	uint"
+			],
+			[
+				"GLUT_KEY_P",
+				"GLUT_KEY_PAGE_DOWN	macro"
+			],
+			[
+				"dra",
+				"draw_grid	bool"
+			],
+			[
+				"GL_PO",
+				"GL_POINTS	macro"
+			],
+			[
+				"_gam",
+				"_game_stopped	bool"
+			],
+			[
+				"_game",
+				"_game_stopped	bool"
+			],
+			[
+				"obj",
+				"obj_type	int"
+			],
+			[
+				"glutSetWin",
+				"glutSetWindowTitle(const char *title)	void"
+			],
+			[
+				"pu",
+				"push_back(value_type &&__x)	void"
 			],
 			[
 				"Gam",
@@ -18,10 +66,6 @@
 			[
 				"era",
 				"erase(iterator __position)	iterator"
-			],
-			[
-				"ob",
-				"obj	IGameObject *"
 			],
 			[
 				"Get",
@@ -152,10 +196,6 @@
 				"glColor3fv(const GLfloat *v)	void"
 			],
 			[
-				"GL_PO",
-				"GL_POINT	macro"
-			],
-			[
 				"Pr",
 				"PrintLog(const char *message, int type)	void"
 			],
@@ -247,101 +287,17 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "src/Snake.cpp",
-			"settings":
-			{
-				"buffer_size": 1545,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/Apple.cpp",
-			"settings":
-			{
-				"buffer_size": 594,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/GameEngine.cpp",
-			"settings":
-			{
-				"buffer_size": 1585,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/GameBase.cpp",
-			"settings":
-			{
-				"buffer_size": 2069,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/GlutBackend.cpp",
-			"settings":
-			{
-				"buffer_size": 1798,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/header/Snake.h",
-			"settings":
-			{
-				"buffer_size": 455,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/header/Apple.h",
-			"settings":
-			{
-				"buffer_size": 400,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/Makefile",
-			"settings":
-			{
-				"buffer_size": 548,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/header/engine_common.h",
-			"settings":
-			{
-				"buffer_size": 211,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/header/IGameObject.h",
-			"settings":
-			{
-				"buffer_size": 341,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/header/GameBase.h",
-			"settings":
-			{
-				"buffer_size": 718,
-				"line_ending": "Unix"
-			}
-		}
 	],
-	"build_system": "Packages/User/OpenGL.sublime-build",
+	"build_system": "Packages/C++/C++.sublime-build",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 72.0,
 		"selected_items":
 		[
+			[
+				"pkg inst",
+				"Package Control: Install Package"
+			],
 			[
 				"pkg re",
 				"Package Control: Remove Package"
@@ -351,7 +307,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 449.0
+		"width": 440.0
 	},
 	"console":
 	{
@@ -368,22 +324,34 @@
 	},
 	"file_history":
 	[
+		"/home/mixser/Work/C++/OpenGL/first/src/op.cpp",
+		"/home/mixser/Work/C++/OpenGL/first/src/Makefile",
+		"/home/mixser/Work/C++/OpenGL/first/src/Apple.cpp",
+		"/home/mixser/Work/C++/OpenGL/first/src/Snake.cpp",
+		"/home/mixser/Work/C++/OpenGL/first/src/GameBase.cpp",
+		"/home/mixser/Work/C++/OpenGL/first/src/GameEngine.cpp",
+		"/home/mixser/Work/C++/OpenGL/first/sublimegdb_openGL_example.sublime-settings",
+		"/home/mixser/Work/C++/OpenGL/first/openGL_example.sublime-project",
+		"/home/mixser/.config/sublime-text-2/Packages/User/SublimeGDB.sublime-settings",
+		"/home/mixser/.config/sublime-text-2/Packages/User/untitled.sublime-build",
+		"/home/mixser/Work/C++/OpenGL/first/src/header/Snake.h",
 		"/home/mixser/Work/C++/OpenGL/first/src/header/GameEngine.h",
+		"/home/mixser/Work/C++/OpenGL/first/src/header/engine_common.h",
+		"/home/mixser/.config/sublime-text-2/Packages/SublimeGDB/SublimeGDB.sublime-settings",
+		"/home/mixser/log.txt",
+		"/home/mixser/Work/C++/OpenGL/first/src/GlutBackend.cpp",
+		"/home/mixser/Work/C++/OpenGL/first/src/header/GlutBackend.h",
+		"/home/mixser/Work/C++/OpenGL/first/src/header/ICallback.h",
+		"/home/mixser/Work/C++/OpenGL/first/src/header/IGameObject.h",
+		"/home/mixser/Work/C++/OpenGL/first/src/header/GameBase.h",
+		"/home/mixser/Work/C++/OpenGL/first/src/header/Apple.h",
+		"/home/mixser/Work/C++/OpenGL/first/.gitignore",
+		"/home/mixser/Work/C++/OpenGL/first/src/util.cpp",
 		"/home/mixser/Work/C++/OpenGL/first/src/main.cpp",
 		"/home/mixser/Work/C++/OpenGL/first/Makefile",
-		"/home/mixser/Work/C++/OpenGL/first/src/header/IGameObject.h",
 		"/usr/include/sys/types.h",
 		"/usr/include/GL/glew.h",
-		"/home/mixser/Work/C++/OpenGL/first/src/util.cpp",
-		"/home/mixser/Work/C++/OpenGL/first/src/GameEngine.cpp",
-		"/home/mixser/Work/C++/OpenGL/first/src/GlutBackend.cpp",
-		"/home/mixser/Work/C++/OpenGL/first/src/GameBase.cpp",
-		"/home/mixser/Work/C++/OpenGL/first/src/Makefile",
-		"/home/mixser/Work/C++/OpenGL/first/src/header/engine_common.h",
 		"/home/mixser/Work/C++/OpenGL/first/src/header/util.h",
-		"/home/mixser/Work/C++/OpenGL/first/src/header/ICallback.h",
-		"/home/mixser/Work/C++/OpenGL/first/src/header/GlutBackend.h",
-		"/home/mixser/Work/C++/OpenGL/first/src/header/GameBase.h",
 		"/usr/include/GL/gl.h",
 		"/usr/include/GL/freeglut_std.h",
 		"/home/mixser/.config/sublime-text-2/Packages/User/OpenGL.sublime-build",
@@ -401,11 +369,9 @@
 		"/usr/include/stdio.h",
 		"/home/mixser/Work/C++/OpenGL/first/source.cpp",
 		"/home/mixser/Work/C++/OpenGL/first/openGL_example.sublime-workspace",
-		"/home/mixser/Work/C++/OpenGL/first/openGL_example.sublime-project",
 		"/home/mixser/.config/sublime-text-2/Packages/SublimeClang/SublimeClang.sublime-settings",
 		"/home/mixser/Work/C++/OpenGL/first/1",
 		"/usr/include/c++/4.8.2/iostream",
-		"/home/mixser/.config/sublime-text-2/Packages/SublimeGDB/SublimeGDB.sublime-settings",
 		"/home/mixser/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
 		"/home/mixser/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings"
 	],
@@ -425,6 +391,14 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"_user",
+			"Coll",
+			"break",
+			"p_engine",
+			"Render",
+			"_user",
+			"_snake",
+			"_user",
 			"Coll",
 			"GameBase",
 			"sett",
@@ -447,310 +421,8 @@
 	"groups":
 	[
 		{
-			"selected": 2,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "src/Snake.cpp",
-					"settings":
-					{
-						"buffer_size": 1545,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1442,
-								1442
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C++.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 270.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "src/Apple.cpp",
-					"settings":
-					{
-						"buffer_size": 594,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								333,
-								333
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C++.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 225.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "src/GameEngine.cpp",
-					"settings":
-					{
-						"buffer_size": 1585,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1464,
-								1464
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C++.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "src/GameBase.cpp",
-					"settings":
-					{
-						"buffer_size": 2069,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2023,
-								2023
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C++.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1230.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "src/GlutBackend.cpp",
-					"settings":
-					{
-						"buffer_size": 1798,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1792,
-								1792
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C++.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 956.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 2,
-			"sheets":
-			[
-				{
-					"buffer": 5,
-					"file": "src/header/Snake.h",
-					"settings":
-					{
-						"buffer_size": 455,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								250,
-								250
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C++.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "src/header/Apple.h",
-					"settings":
-					{
-						"buffer_size": 400,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								99,
-								99
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C++.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "src/Makefile",
-					"settings":
-					{
-						"buffer_size": 548,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								275,
-								275
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Makefile/Makefile.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "src/header/engine_common.h",
-					"settings":
-					{
-						"buffer_size": 211,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								173,
-								173
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C++.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "src/header/IGameObject.h",
-					"settings":
-					{
-						"buffer_size": 341,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								307,
-								307
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C++.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "src/header/GameBase.h",
-					"settings":
-					{
-						"buffer_size": 718,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								352,
-								352
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C++.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -771,18 +443,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.472861842105,
 			1.0
 		],
 		"rows":
@@ -825,6 +490,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 137.0,
+	"side_bar_width": 153.0,
 	"status_bar_visible": true
 }

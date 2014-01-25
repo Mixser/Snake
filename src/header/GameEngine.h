@@ -67,7 +67,12 @@ class GameEngine
 		void AddGameObject(IGameObject * g_object);
 		
 
+		int GetParam(int param_type);
+
 		void SendMessage(uint message_type, uint  message_value);
+
+
+		~GameEngine();
 };
 
 #endif // _GAME_ENGINE_ //

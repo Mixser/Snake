@@ -6,7 +6,7 @@ project: util.o GlutBackend.o  GameEngine.o GameBase.o main.o Snake.o Apple.o
 	
 
 
-util.o: util.cpp
+util.o:  util.cpp
 	g++ -c util.cpp
 
 GameBase.o: GameBase.cpp 

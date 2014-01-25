@@ -49,17 +49,25 @@ void GameEngine::DrawObjects()
 
 void GameEngine::Collision()
 {
-	if (_user == NULL)
+
+	if (_user == NULL) 
+	{
+		PrintLog("Try find collision with null user", WARNING_MESSAGE);
 		return;
+	}
+
 	for (int i = 0; i < _game_objects.size(); i++)
-		if ( _user && _user->Collision(_game_objects[i]))
+	{
+		if (_user && _user->Collision(_game_objects[i]))
 		{
-			PrintLog("Collision was found by engine (snake with apple)", INFO_MESSAGE);
+			PrintLog("Collision was found", INFO_MESSAGE);
 			IGameObject * _objForRemove = _game_objects[i];
 			_game_objects.erase(_game_objects.begin() + i);
 			_user->IncSize();
+			
 			SaveDelete(_objForRemove);
 		}
+	}
 }
 
 void GameEngine::RenderScene() 
@@ -72,8 +80,11 @@ void GameEngine::RenderScene()
 void GameEngine::AddGameObject(IGameObject * g_object)
 {
 	PrintLog("AddObject", INFO_MESSAGE);
-	if (g_object->GetType() == 1)
+	if (g_object->GetType() == SNAKE) {
 		_user = dynamic_cast<Snake*>(g_object);
+		_game_stopped = false;
+		PrintLog("New Snake in game", INFO_MESSAGE);
+	}
 	_game_objects.push_back(g_object);
 }
 
@@ -82,44 +93,23 @@ void GameEngine::SendMessage(uint message_type, uint  message_value)
 {
 	switch (message_type)
 	{
-		case SNAKE_TURN: 
+		case USER_MOVE: 	if (_user)
+								_user->SetDirection(message_value);
 							break;
 
-		case KEYBOARD_DOWN: KeyboardHandler(message_value);
+		case CHANGE_STATE: 	_game_stopped = (bool) message_value;
 							break;
 
-		case STOP_GAME: 	_game_stopped = true;
+		case GRID: 			draw_grid = (bool) message_value;
 							break;
 
-		case START_GAME:	_game_stopped = false;
-							break;
+		case NEW_GAME:		if(_user == NULL)
+							AddGameObject(new Snake());
 
-		case GRID: 			draw_grid = !draw_grid;
-							break;
 
 	}
 }
 
-void GameEngine::KeyboardHandler(int key_code)
-{
-	switch (key_code)
-	{
-		case UP:
-		case DOWN:
-		case LEFT:
-		case RIGHT:	if (_user != NULL)
-						_user->SetDirection(key_code);
-					break;
-		case SPACE:
-					if (_game_stopped && _user == NULL)
-					{
-						AddGameObject(new Snake());
-						_game_stopped = false;
-					}
-					break;
-
-	}
-}
 
 
 
@@ -138,4 +128,25 @@ void GameEngine::SaveDelete(IGameObject * obj)
 					break;
 	}
 	delete obj;
+}
+
+
+int GameEngine::GetParam(int param_type)
+{
+	switch( param_type)
+	{
+		case GRID:		return (int) draw_grid;
+		default: 		return (int) -1;
+	}
+}
+
+
+GameEngine::~GameEngine()
+{
+	PrintLog("Remove GameEngine", WARNING_MESSAGE);
+	_user = NULL;
+	_instance = NULL;
+	for (int i = 0; i < _game_objects.size(); i++)
+		delete _game_objects[i];
+
 }

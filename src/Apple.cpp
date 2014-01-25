@@ -30,7 +30,7 @@ std::pair<int, int> Apple::GetPosition()
 
 int Apple::GetType() 
 {
-	return 2;
+	return APPLE;
 }
 
 void Apple::Move()

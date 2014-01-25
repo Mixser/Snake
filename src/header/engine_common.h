@@ -1,6 +1,10 @@
 #ifndef _COMMON_
 #define _COMMON_
 
+//Game state
+#define PLAY 0
+#define STOP 1
+
 //Object types
 
 #define SNAKE 1
@@ -17,11 +21,10 @@
 
 
 // MESSAGE TYPES 
-#define SNAKE_TURN 1
-#define KEYBOARD_DOWN 10
+#define USER_MOVE 10
 
-#define STOP_GAME 15
-#define START_GAME 16
+#define CHANGE_STATE 15
+
 
 
 #define NEW_GAME 20

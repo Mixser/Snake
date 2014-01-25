@@ -13,6 +13,10 @@
 			[
 				"-std=c++11"
 			]
-		}
+		},
+
+		"sublimegdb_workingdir": "/home/mixser/Work/C++/OpenGL/first/src",
+         // NOTE: You MUST provide --interpreter=mi for the plugin to work
+        "sublimegdb_commandline": "gdb --interpreter=mi ../build/project"          
 	}
 }

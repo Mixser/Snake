@@ -26,42 +26,42 @@ void GameBase::Mouse(int button,int state ,int x, int y)
 
 void GameBase::Keyboard(unsigned char key, int x, int y)
 {
-	int _message = -1;
 	switch (key) 
 	{
-		case GLUT_KEY_UP: 
-								_message = UP;
-						    	break;	
-		case GLUT_KEY_DOWN: 	
-								_message = DOWN;
-						    	break;
-		case GLUT_KEY_LEFT: 	
-								_message = LEFT;
-						  		break;
-		case GLUT_KEY_RIGHT:	
-								_message = RIGHT;
-						  		break;
-		case GLUT_KEY_SPACE:
-								_message = SPACE;
-								break;
-		case GLUT_KEY_PAGE_DOWN: 
-								p_engine->SendMessage(GRID, 0);
-								return;
-		default:				
-								break;
+		case GLUT_KEY_UP: 		    p_engine->SendMessage(USER_MOVE, UP);
+						    	    break;	
 
+		case GLUT_KEY_DOWN: 	    p_engine->SendMessage(USER_MOVE, DOWN);
+						    	    break;
+
+		case GLUT_KEY_LEFT: 	    p_engine->SendMessage(USER_MOVE, LEFT);
+						  		    break;
+
+		case GLUT_KEY_RIGHT:	    p_engine->SendMessage(USER_MOVE, RIGHT);
+						  		    break;
+
+		case GLUT_KEY_PAGE_DOWN:    p_engine->SendMessage(GRID, !p_engine->GetParam(GRID));
+								    return;
+
+		case 27:					glutLeaveMainLoop();
+									return;
+
+		case GLUT_KEY_SPACE:	    p_engine->SendMessage(NEW_GAME, 0);
+								    break;
+
+		default:				
+									break;
 
 	}
-	p_engine->SendMessage(KEYBOARD_DOWN, _message);
 }
 
 void GameBase::Reshape(int width, int height) 
 {
-	p_engine->SendMessage(STOP_GAME, 0);
+	p_engine->SendMessage(CHANGE_STATE, STOP);
 	glLoadIdentity();
     gluOrtho2D(0, width, height, 0);	
     glViewport(viewport_x, viewport_y,  width,  height);
-    p_engine->SendMessage(START_GAME, 0);
+    p_engine->SendMessage(CHANGE_STATE, PLAY);
  
 }
 
@@ -93,7 +93,7 @@ bool GameBase::Init()
 	viewport_y = 0;
 	PrintLog("Init game base", INFO_MESSAGE);
 	p_engine = GameEngine::GetInstance();
-	p_engine->AddGameObject( new Snake());
+	p_engine->AddGameObject( new Snake() );
 	glutTimerFunc(10, SpawnFruit, 2);
 	return true;
 }
@@ -102,4 +102,5 @@ bool GameBase::Init()
 GameBase::~GameBase()
 {
 	PrintLog("Remove GameBase", INFO_MESSAGE);
+	delete p_engine;
 }
