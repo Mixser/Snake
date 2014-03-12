@@ -1,4 +1,4 @@
-all: project
+all: project clean
 
 
 project: util.o GlutBackend.o  GameEngine.o GameBase.o main.o Snake.o Apple.o

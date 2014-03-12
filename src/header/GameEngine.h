@@ -31,8 +31,6 @@ class GameEngine
 		Snake * _user;
 		bool draw_grid;
 		
-
-
 		GameEngine();
 		void DrawNet();
 		void ObjectActions();

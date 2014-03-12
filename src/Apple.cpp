@@ -7,7 +7,7 @@ Apple::Apple(int x, int y)
 	_Y = y;
 }
 Apple::~Apple()
-{
+{	
 	PrintLog("Apple has been deleted", WARNING_MESSAGE);
 }
 

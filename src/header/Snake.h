@@ -1,4 +1,4 @@
-#ifndef _SNAKE_
+#ifndef _SNAKE_	
 #define _SNAKE_
 
 #include <GL/freeglut.h>
