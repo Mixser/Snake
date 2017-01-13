@@ -31,7 +31,7 @@
 		{
 			"name": "project settings",
 			"path": ".",
-			"folder_exclude_patterns": ["*"]
+			"folder_exclude_patterns": ["*"],
 		}
 
 	],
@@ -47,6 +47,6 @@
 		"sublimegdb_commandline": "gdb --interpreter=mi ./build/project",
 		"sublimegdb_workingdir": "./src",
 		"tab_size": 4,
-		"translate_tabs_to_spaces": true
+		"translate_tabs_to_spaces": true,
 	}
 }
