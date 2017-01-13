@@ -4,7 +4,7 @@ CFLAGS=-c -Wall -Wno-deprecated
 FRAMEWORKS=-framework OpenGL -framework GLUT
 
 INCLUDES=-I$(GLEW_PATH)include
-
+APPNAME=snake
 
 all: project clean
 
