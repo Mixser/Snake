@@ -1,0 +1,52 @@
+{
+	"build_systems":
+	[
+		{
+			"name": "Build snake",
+			"cmd": ["make && ../build/project"],
+			"shell": true,
+			"working_dir": "$project_path/src"			
+		}
+	],
+	"folders":
+	[	
+		{
+			"name": "headers",
+			"path": "./src/header",
+			"file_exclude_patterns": [
+				"*.cpp", "*.o"
+			],
+		},
+		{
+			"name": "cpp",
+			"path": "./src",
+			"file_exclude_patterns": [
+				"*.h", "*.o", "Makefile"
+				
+			],
+			"folder_exclude_patterns": [
+				"header",
+			],
+		},
+		{
+			"name": "project settings",
+			"path": ".",
+			"folder_exclude_patterns": ["*"]
+		}
+
+	],
+	"settings":
+	{
+		"sublimeclang_additional_language_options":
+		{
+			"c++":
+			[
+				"-std=c++11"
+			]
+		},
+		"sublimegdb_commandline": "gdb --interpreter=mi ./build/project",
+		"sublimegdb_workingdir": "./src",
+		"tab_size": 4,
+		"translate_tabs_to_spaces": true
+	}
+}
