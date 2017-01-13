@@ -21,7 +21,7 @@
 			"name": "cpp",
 			"path": "./src",
 			"file_exclude_patterns": [
-				"*.h", "*.o", "Makefile"
+				"*.h", "*.o"
 				
 			],
 			"folder_exclude_patterns": [

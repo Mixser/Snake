@@ -5,6 +5,7 @@ FRAMEWORKS=-framework OpenGL -framework GLUT
 
 INCLUDES=-I$(GLEW_PATH)include
 
+
 all: project clean
 
 project: build_all

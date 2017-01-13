@@ -1,3 +1,9 @@
 *.o
 *.sublime-workspace
+
 build/*
+*.pbxuser
+*.mode1v3
+.svn
+.DS_Store
+profile
