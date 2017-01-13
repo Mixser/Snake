@@ -3,7 +3,7 @@
 	[
 		{
 			"name": "Build snake",
-			"cmd": ["make && ../build/project"],
+			"cmd": ["make -e APPNAME=snake && ../build/snake"],
 			"shell": true,
 			"working_dir": "$project_path/src"			
 		}
