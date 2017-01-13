@@ -52,9 +52,11 @@ void GLUTBackendInit(int argc, char ** argv)
 {
 	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH);
+	#ifndef __APPLE__
 	glutSetOption(GLUT_ACTION_ON_WINDOW_CLOSE,
 				  GLUT_ACTION_GLUTMAINLOOP_RETURNS);	
 	glEnable(GL_LINE_SMOOTH);
+	#endif
 }
 
 void GLUTBackendRun(ICallback * pCallback)
@@ -78,12 +80,13 @@ bool GLUTBackendCreateWindow(unsigned int width, unsigned int height,
 {
  	glutInitWindowSize(width, height);
  	glutCreateWindow(pTitle);
-
+	#ifndef __APPLE__
  	GLenum res = glewInit();
 	if (res != GLEW_OK) {
  		PrintLog("Error ", ERROR_MESSAGE);
  		return false;
  	}
+	#endif
  	PrintLog("Window is created ", INFO_MESSAGE);
 	return true;						 	
 }

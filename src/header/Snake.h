@@ -1,9 +1,15 @@
 #ifndef _SNAKE_	
 #define _SNAKE_
 
-#include <GL/freeglut.h>
+
 #include <cstdio>
 
+#ifndef __APPLE__
+#include <GL/freeglut.h>
+#else
+#include <OpenGL/gl.h>
+#include <GLUT/GLUT.h>
+#endif
 
 #include "util.h"
 #include "engine_common.h"

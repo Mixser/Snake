@@ -5,8 +5,9 @@
 #include <cstdio>
 
 #include <GL/glew.h>
+#ifndef __APPLE__
 #include <GL/freeglut.h>
-
+#endif
 
 #include "Apple.h"
 #include "GameEngine.h"

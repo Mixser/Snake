@@ -43,7 +43,7 @@ void GameBase::Keyboard(unsigned char key, int x, int y)
 		case GLUT_KEY_PAGE_DOWN:    p_engine->SendMessage(GRID, !p_engine->GetParam(GRID));
 								    return;
 
-		case 27:					glutLeaveMainLoop();
+		case 27:					exit(0);
 									return;
 
 		case GLUT_KEY_SPACE:	    p_engine->SendMessage(NEW_GAME, 0);

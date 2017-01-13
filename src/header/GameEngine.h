@@ -4,9 +4,14 @@
 
 #include <vector>
 #include <cstdlib>
+#ifndef __APPLE__
 #include <GL/freeglut.h>
 #include <GL/gl.h>
 #include <GL/glu.h>
+#else
+#include <OpenGL/gl.h>
+#include <OpenGL/glu.h>
+#endif
 
 #include "Snake.h"
 
