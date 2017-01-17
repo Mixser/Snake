@@ -16,8 +16,8 @@ Snake::~Snake()
 
 void Snake::Move()
 {
-    int y = glutGet(GLUT_WINDOW_HEIGHT) / 20;
-    int x = glutGet(GLUT_WINDOW_WIDTH) / 20;
+    int y = glutGet(GLUT_WINDOW_HEIGHT) / CELL_SIZE;
+    int x = glutGet(GLUT_WINDOW_WIDTH) / CELL_SIZE;
 
     if (_side == -1 )
     {   
@@ -84,12 +84,12 @@ void Snake::RenderObject()
     
     for (int i = 0 ; i < _snake.size(); i++)
     {
-        int _x = _snake[i].first;
-        int _y = _snake[i].second;
-        glVertex2i(_x*20     , _y*20 + 10);
-        glVertex2i(_x*20 + 10, _y*20 + 20);
-        glVertex2i(_x*20 + 20, _y*20 + 10);
-        glVertex2i(_x*20 + 10, _y*20);
+        int _x = _snake[i].first * CELL_SIZE;
+        int _y = _snake[i].second * CELL_SIZE;
+        glVertex2i(_x     , _y + (CELL_SIZE / 2));
+        glVertex2i(_x + (CELL_SIZE / 2), _y + CELL_SIZE);
+        glVertex2i(_x + CELL_SIZE, _y + (CELL_SIZE / 2));
+        glVertex2i(_x + (CELL_SIZE / 2), _y);
     }
     glEnd();
 

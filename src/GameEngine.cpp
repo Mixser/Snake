@@ -16,18 +16,18 @@ GameEngine::GameEngine()
 void GameEngine::DrawNet() 
 {
     int width = glutGet(GLUT_WINDOW_WIDTH);
-    int height =glutGet(GLUT_WINDOW_HEIGHT);
+    int height = glutGet(GLUT_WINDOW_HEIGHT);
     glBegin(GL_LINES);
-        for (int i = 0; i <= height / 20; i++)
+        for (int i = 0; i <= height; i += CELL_SIZE)
         {
-            glVertex2i(0, i * 20);
-            glVertex2i(width, i * 20);
+            glVertex2i(0, i);
+            glVertex2i(width, i);
         }
 
-        for (int i = 0; i <= width / 20; i++)
+        for (int i = 0; i <= width; i+= CELL_SIZE)
         {
-            glVertex2i(i*20, 0);
-            glVertex2i(i*20, height);
+            glVertex2i(i, 0);
+            glVertex2i(i, height);
         }       
     glEnd();
 }

@@ -3,6 +3,8 @@
 
 
 #define GLUT_KEY_SPACE 32
+#define GLUT_KEY_ESC 27
+#define FRUIT_SPAWN_TIME 2000
 
 
 GameBase * GameBase::p_base = NULL;
@@ -43,7 +45,7 @@ void GameBase::Keyboard(unsigned char key, int x, int y)
         case GLUT_KEY_PAGE_DOWN:    p_engine->SendMessage(GRID, !p_engine->GetParam(GRID));
                                     return;
 
-        case 27:                    exit(0);
+        case GLUT_KEY_ESC:          exit(0);
                                     return;
 
         case GLUT_KEY_SPACE:        p_engine->SendMessage(NEW_GAME, 0);
@@ -83,8 +85,16 @@ void GameBase::Idle()
 void SpawnFruit(int timer_id)
 {
     GameBase * p = GameBase::GetInstance();
-    p->p_engine->AddGameObject(new Apple(rand() % 40, rand() % 30));
-    glutTimerFunc(2000, SpawnFruit, timer_id);
+    
+    int height = glutGet(GLUT_WINDOW_HEIGHT);
+    int width = glutGet(GLUT_WINDOW_WIDTH);
+    
+    int mod_x = width / CELL_SIZE;
+    int mod_y = height / CELL_SIZE;
+    
+    
+    p->p_engine->AddGameObject(new Apple(rand() % mod_x, rand() % mod_y));
+    glutTimerFunc(FRUIT_SPAWN_TIME, SpawnFruit, timer_id);
 }
 
 bool GameBase::Init()

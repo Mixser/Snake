@@ -1,6 +1,10 @@
 #ifndef _COMMON_
 #define _COMMON_
 
+
+//Size constants
+#define CELL_SIZE 20
+
 //Game state
 #define PLAY 0
 #define STOP 1
@@ -11,9 +15,6 @@
 #define APPLE 2
 
 
-
-
-
 // LOG_MESSAGE_TYPES
 #define ERROR_MESSAGE 0
 #define WARNING_MESSAGE 1
@@ -22,13 +23,8 @@
 
 // MESSAGE TYPES 
 #define USER_MOVE 10
-
 #define CHANGE_STATE 15
-
-
-
 #define NEW_GAME 20
-
 // On/Off grid 
 #define GRID 25
 
